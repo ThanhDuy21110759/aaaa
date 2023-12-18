@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f2f6fc;
+	color: #69707a;
+}
+
+.img-account-profile {
+	height: 10rem;
+}
+
+.rounded-circle {
+	border-radius: 50% !important;
+}
+
+.card {
+	box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+
+.card .card-header {
+	font-weight: 500;
+}
+
+.card-header:first-child {
+	border-radius: 0.35rem 0.35rem 0 0;
+}
+
+.card-header {
+	padding: 1rem 1.35rem;
+	margin-bottom: 0;
+	background-color: rgba(33, 40, 50, 0.03);
+	border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+.form-control,
+.dataTable-input {
+	display: block;
+	width: 100%;
+	padding: 0.875rem 1.125rem;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1;
+	color: #69707a;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #c5ccd6;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0.35rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-borders .nav-link.active {
+	color: #0061f2;
+	border-bottom-color: #0061f2;
+}
+
+.nav-borders .nav-link {
+	color: #69707a;
+	border-bottom-width: 0.125rem;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+label.error {
+	color: red;
+	/* Chọn màu sắc bạn muốn sử dụng, ví dụ: green */
+	font-size: 12px;
+	/* Có thể thay đổi cỡ chữ nếu cần */
+}
+
+/* CSS để thay đổi màu sắc của ô nhập liệu khi có lỗi */
+input.error {
+	border-color: red;
+	/* Chọn màu sắc bạn muốn sử dụng, ví dụ: green */
+}
+
+/*Dùng để người dùng biết đang khóa input */
+
+input[readonly] {
+	background-color: #ddd;
+	/* Đặt màu xám hoặc màu khác tùy ý */
+	color: #555;
+	/* Đặt màu chữ phù hợp */
+}
+
+/* Style cho phần overlay */
+.formpopup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* Màu trắng với độ mờ */
+	z-index: 10;
+	/* Z-index cao hơn so với form-popup để nổi lên trên */
+}
+
+/* Style cho form-container */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Điều chỉnh độ rộng của form */
+    max-width: 800px; /* Đặt giới hạn độ rộng tối đa */
+    padding: 20px; /* Tăng độ dày lớp padding */
+    background-color: #3498db; /* Màu nền tương phản, ví dụ: xanh dương */
+    color: #fff; /* Màu chữ trắng tạo tương phản */
+    border-radius: 8px; /* Bo tròn viền container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0; /* Giảm khoảng cách giữa các trường input */
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
